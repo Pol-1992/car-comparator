@@ -1,0 +1,14 @@
+# Data (no subir datasets)
+data/raw/
+data/interim/
+data/processed/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
