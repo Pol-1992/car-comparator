@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="de"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zugriff verweigert / Access denied</title>
+    <style>
+        html:not([lang="en"]) [lang="en"] {
+            display: none;
+        }
+
+        html:not([lang="de"]) [lang="de"] {
+            display: none;
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: YouthBase;
+            font-weight: 700;
+            src: url(https://static.classistatic.de/fonts/mob-youth-base-bold-v1.woff2) format("woff2"),url(https://static.classistatic.de/fonts/mob-youth-base-bold-v1.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: YouthBase;
+            font-weight: 400;
+            src: url(https://static.classistatic.de/fonts/mob-youth-base-regular-v1.woff2) format("woff2"),url(https://static.classistatic.de/fonts/mob-youth-base-regular-v1.woff) format("woff")
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: rgb(219, 48, 0);
+        }
+
+        h1 {
+            margin: 27px 0 0 0;
+        }
+
+        h1+section {
+            margin-bottom: 9px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-feature-settings: "liga" 1, "dlig" 0, "hlig" 0, "calt" 1, "rlig" 1;
+            font-family: YouthBase, Gibson, Tahoma, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        header {
+            padding: 16px;
+            display: flex;
+            user-select: none;
+            box-shadow: 0 1px 1.5px #00000080, inset 0 -2px 0 rgb(245, 247, 250);
+        }
+
+        .header--logo {
+            width: 300px;
+        }
+
+        .container {
+            align-self: center;
+            max-width: 480px;
+            padding: 0 18px;
+        }
+
+        main ul {
+            margin-left: 18px;
+        }
+
+        main p {
+            margin: 9px 0;
+        }
+
+        .header--link {
+            text-decoration: none;
+        }
+
+        section {
+            margin: 27px 0;
+        }
+
+        footer section {
+            margin: 0;
+        }
+
+        footer ul {
+            list-style-type: none;
+            margin-block-start: 0;
+            margin: 9px 0 0 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="header--link" title="mobile.de" href="https://mobile.de/">
+            <img class="header--logo" lang="de" src="https://static.classistatic.de/static/graphics/logo/logo-light-de-2x-v1.webp">
+            <img class="header--logo" lang="en" src="https://static.classistatic.de/static/graphics/logo/logo-light-en-2x-v1.webp">
+        </a>
+    </header>
+    <div class="container">
+        <main tabindex="-1">
+            <h1 lang="de">Zugriff verweigert</h1>
+            <h1 lang="en">Access denied</h1>
+
+            <section>
+                <p>Reference Error: 0.5c8f2117.1770660228.2aa2fad0</p>
+            </section>
+
+            <section lang="de">
+                <p>Leider können wir Ihnen keinen Zugriff auf unsere Daten gewähren.<br>
+                    Wenn Sie Interesse an unseren Daten haben, kontaktieren Sie uns bitte:
+                </p>
+            </section>
+
+            <section lang="en">
+                <p>Unfortunately, automated access to this page was denied.<br>
+                    If you are interested in accessing our data, please contact us:</p>
+            </section>
+
+            <section lang="de">
+                <p><strong>Telefon</strong></p>
+                <p>Montag bis Freitag von 8:00 - 18:00</p>
+                <ul>
+                    <li>Private Nutzer und gewerbliche Anbieter: +49 (0) 30 81097-601</li>
+                    <li>Händler: +49 (0) 30 81097-500</li>
+                </ul>
+            </section>
+
+            <section lang="en">
+                <p><strong>Phone</strong></p>
+                <p>Mo. - Fr. 8:00 - 18:00</p>
+                <ul>
+                    <li>Private users and commercial sellers: +49 (0) 30 81097-601</li>
+                    <li>Dealers: +49 (0) 30 81097-500</li>
+                </ul>
+            </section>
+
+            <section>
+                <p><strong>E-Mail</strong></p>
+                <p><a href="mailto:service@team.mobile.de?subject=Reference%20Error:%200.5c8f2117.1770660228.2aa2fad0">service@team.mobile.de</a>
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <section>
+                <ul>
+                    <li>mobile.de GmbH</li>
+                    <li lang="de">Dernburgstraße 50 | 14057 Berlin | Deutschland</li>
+                    <li lang="en">Dernburgstraße 50 | 14057 Berlin | Germany</li>
+                    <li lang="de">Geschäftsführung: Ajay Bhatia und Katja Thieme</li>
+                    <li lang="en">Managing Directors: Ajay Bhatia and Katja Thieme</li>
+                    <li>HRB Nr: 271620 B, Amtsgericht Charlottenburg</li>
+                    <li lang="de">Sitz der Gesellschaft: Berlin</li>
+                    <li lang="en">Registered office of the company: Berlin</li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang && userLang.startsWith('en')) {
+            document.querySelector('html').setAttribute('lang', 'en');
+        }
+    </script>
+
+
+
+</body></html>
